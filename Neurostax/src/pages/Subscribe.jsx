@@ -2,11 +2,28 @@ import React, { useState } from "react";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Subscribed with: ${email}`);
-    setEmail(""); // Clear input field
+    setMessage(""); // Clear previous messages
+
+    const response = await fetch("http://127.0.0.1:8000/api/subscribe/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setMessage(data.message);
+      setEmail(""); // Clear input field
+    } else {
+      setMessage("Subscription failed. Try again.");
+    }
   };
 
   return (
@@ -23,6 +40,7 @@ const Subscribe = () => {
         />
         <button type="submit" style={styles.button}>Subscribe</button>
       </form>
+      {message && <p style={styles.message}>{message}</p>}
     </div>
   );
 };
@@ -61,6 +79,11 @@ const styles = {
     border: "none",
     borderRadius: "5px",
     cursor: "pointer",
+  },
+  message: {
+    marginTop: "10px",
+    color: "green",
+    fontWeight: "bold",
   },
 };
 
