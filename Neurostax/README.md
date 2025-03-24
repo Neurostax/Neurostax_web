@@ -1,6 +1,6 @@
 # **NeuroStackX Portfolio - Project Documentation**  
 
-![NeuroStax Logo](Neurostax\src\assets\Copy of INNOVATING INTELLIGENCE.jpg)  
+![NeuroStax Logo](Neurostax\src\assets\Copy_of_INNOVATING_INTELLIGENCE.jpg)  
 **Bridging AI Innovation with Real-World Applications**  
 
 ---
