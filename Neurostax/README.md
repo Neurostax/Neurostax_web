@@ -1,4 +1,4 @@
-# **NeuroStackX Portfolio - Project Documentation**  
+# **NeuroStax Portfolio - Project Documentation**  
 
 ![NeuroStax Logo](Neurostax\src\assets\Copy_of_INNOVATING_INTELLIGENCE.jpg)  
 **Bridging AI Innovation with Real-World Applications**  
@@ -98,4 +98,4 @@ See [LICENSE](LICENSE) for details.
 ### **🌟 Show Your Support**  
 ⭐ **Star this repo** if you found it useful!  
 
-**Built with ❤️ by NeuroStackX** 🚀
+**Built with ❤️ by Neurostax** 🚀
