@@ -101,7 +101,7 @@ const AboutUs = () => {
     <div className="about-us-container">
       {/* Hero Section */}
       <section className="hero-section">
-        <h1>About NeuroStackX</h1>
+        <h1>About Neurostax</h1>
         <p className="tagline">Innovating Intelligence one stack at a time</p>
       </section>
 
@@ -184,7 +184,7 @@ We are engineers of the future, coding reality from imagination, soldering ideas
       <section className="section why-choose-us">
         <div className="section-header">
           <FaRocket className="section-icon" />
-          <h2>Why Choose NeuroStackX?</h2>
+          <h2>Why Choose Neurostax?</h2>
         </div>
         <div className="features-grid">
           <div className="feature">
