@@ -8,6 +8,9 @@ const Navbar = () => {
       <div style={styles.links}>
         <Link to="/" style={styles.link}>Home</Link>
         <Link to="/subscribe" style={styles.link}>Subscribe</Link>
+        <Link to="/Aboutus" style={styles.link}>Aboutus</Link>
+        <Link to="/Portfolio" style={styles.link}>Portfolio</Link>
+
       </div>
     </nav>
   );

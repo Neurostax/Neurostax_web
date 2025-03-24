@@ -1,8 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, ScrollRestoration } from "react-router-dom";
 import Home from "./pages/Home";
 import Subscribe from "./pages/Subscribe";
 import Navbar from "./components/Navbar";
+import AboutUs from "./components/Aboutus";
+import ProjectsPage from "./components/Portfolio";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -12,7 +15,11 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/subscribe" element={<Subscribe />} />
+          <Route path= "/Aboutus" element={<AboutUs/>} />
+          <Route path= "/Portfolio" element={<ProjectsPage/>} />
+
         </Routes>
+        <ScrollToTop/>
       </div>
     </Router>
   );
